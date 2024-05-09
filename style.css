@@ -1,91 +1,122 @@
+/* Загальні стилі */
 body, html {
     margin: 0;
     padding: 0;
-    width: 1440px;
-    height: 765px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Alegreya', serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Запобігає горизонтальному прокручуванню */
+    font-family: 'Alegreya', serif; /* Використання шрифту Alegreya */
 }
 
 header {
-    width: 1440px;
-height: 87px;
-flex-shrink: 0;
-    background-color: #151515;
+    width: 100%; /* Ширина хедера розтягнута на всю ширину сторінки */
+    height: 87px; /* Висота хедера */
+    background-color: transparent; /* Прозорий фон хедера */
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 0 30px;
+    align-items: center;
+    position: relative;
+    padding: 0 30px; /* Додаємо внутрішні відступи для правильного розташування */
 }
 
 .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    width: 100%; /* Використання всієї ширини для контейнера */
+    max-width: 1440px; /* Максимальна ширина для збереження лейауту */
+    margin: auto;
 }
 
 .logo {
-    width: 85px;
-    height: 82.542px;
-    transform: rotate(0.337deg);
-    flex-shrink: 0;
-    margin-right: 300px; /* Відступ справа від логотипу */
+    margin-left: 30px; /* Відступ логотипу зліва */
 }
 
 .navigation {
     display: flex;
-    flex-grow: 1;
-    justify-content: flex-start;
+    gap: 53px; /* Відстань між елементами навігації */
 }
 
 .navigation a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    margin-left: 54px; /* Встановлюємо відступ між посиланнями */
+    color: white; /* Колір тексту */
+    text-decoration: none; /* Без підкреслення */
+    font-size: 18px; /* Розмір шрифту для навігації */
 }
 
 .download-button {
-    padding: 15px 50px;
-    width: 269px;
-height: 66px;
-gap: 10px;
-flex-shrink: 0;
-    background: linear-gradient(90deg, #FDE5C4 0%, #FDF3E8 100%);
-    border-radius: 0 0 0 30px;
-    border: 1px solid #121212;
-    cursor: pointer;
-    font-size: 18px;
-    color: #121212;
+    margin-right: 0; /* Видалення правого відступу */
     display: flex;
+    width: 269px;
+    height: 66px;
+    padding: 15px 50px;
     justify-content: center;
     align-items: center;
-    display: flex;
+    gap: 10px;
+flex-shrink: 0; /* Внутрішні відступи для кнопки */
+    background: linear-gradient(90deg, #FDE5C4 0%, #FDF3E8 100%); /* Градієнт для кнопки */
+    border: 1px solid #121212; /* Рамка для кнопки */
+    border-radius: 0 0 0 30px; /* Закруглення рамки */
+    color: black; /* Колір тексту кнопки */
+    font-size: 18px; /* Розмір шрифту кнопки */
+    cursor: pointer; /* Вказівник курсору як кнопка */
 }
 
 .download-button:hover {
-    background: linear-gradient(90deg, #FDF3E8 0%, #FDE5C4 100%);
+    filter: brightness(1.2); /* Зміна яскравості при наведенні */
 }
 
 .background-container {
-    position: relative;
-    width: 1440px;
-height: 765px;
-flex-shrink: 0;
+    width: 100%; /* Ширина контейнера фону */
+    height: 678px; /* Висота контейнера фону */
+    position: relative; /* Встановлення позиціонування відносно */
 }
 
 .background-image {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Ширина фонового зображення */
+    height: 100%; /* Висота фонового зображення */
+    object-fit: cover; /* Масштабування зображення для покриття всієї області */
 }
 
 .honkai-text {
-    position: absolute;
-    top: 439px;
-    left: 7px;
-    width: 974px;
-    height: 147px;
+    position: absolute; /* Абсолютне позиціонування для тексту Honkai */
+    top: 439px; /* Відстань зверху */
+    left: 7px; /* Відстань зліва */
+    width: 974px; /* Вказуємо ширину для забезпечення візуальної консистенції */
+    height: 147px; /* Вказуємо висоту для забезпечення візуальної консистенції */
 }
+
+/* Екран 2 */
+
+.second-screen {
+    width: 1497px;
+    height: 1956px;
+    background-image: url('img/wallpaper2.png');
+    background-size: cover;
+    position: relative;
+  }
+  .text {
+    position: absolute;
+    font-size: 28px;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+  #text1 {
+    top: 445px;
+    left: 71px;
+    right: 749px;
+    width: 620px;
+  }
+  #text2 {
+    top: 945px;
+    left: 774px;
+    right: 84px;
+    width: 582px;
+  }
+  #text3 {
+    top: 1430px;
+    left: 71px;
+    right: 717px;
+    width: 652px;
+  }
