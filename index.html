@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honkai</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -42,6 +43,58 @@
       Сюжет гри може бути складним і захоплюючим, де головні герої стикаються з загадковими загрозами, розкривають таємниці світу і борються з міфічними істотами. Гра часто пропонує інтригуючі квести, події та місії, які дозволяють гравцям дізнатися більше про світ "Honkai: Star Rail" і розвивати своїх персонажів.
     </div>
   </div>
+ 
+    <!-- Third Screen Container -->
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+      <div class="slide active" id="slide1">
+          <img src="img/фонавантюрин.png" alt="Авантюрин Background" class="background">
+          <img src="img/авантюрин.png" alt="Авантюрин" class="character-image">
+          <div class="text-container">
+                <h1>АВАНТЮРИН</h1>
+                <p id="history-text-slide1" class="hidden">Топ-менеджер відділу стратегічних інвестицій КММ та один з Десяти кам'яних сердець. Його основний камінь — «авантюрин хитрощів». Приховує свої справжні наміри за незмінною посмішкою живе за принципом «хто не ризикує, той не п'є шампанського». Він отримав нинішнє становище, обігравши саму долю.
+                  Вважає людське життя інвестицією з високим ступенем ризику та гарною прибутковістю. І в цій справі йому немає рівних.</p>
+                  <p id="role-text-slide1" class="hidden">Авантюрин - персонаж захисту, який може накладати щит Зміцнена ставка на всіх союзників і підвищувати їхній опір ефектам. Крім того, Авантюрин може різними способами накопичувати заряди і проводити бонус-атаки.</p>
+                  <button onclick="toggleText('slide1', 'history')" class="button history-button">Історія персонажа</button>
+                  <button onclick="toggleText('slide1', 'role')" class="button role-button">Роль у грі</button>
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+      </div>
 
+ <!-- Slide 2 -->
+      <div class="slide" id="slide2">
+        <img src="img/ахеронфон.png" alt="Ахерон Background" class="background">
+        <img src="img/ахерон.png" alt="Ахерон" class="character-image">
+        <div class="text-container">
+            <h1>АХЕРОН</h1>
+            <p id="history-text-axeron" class="hidden">Мандрівниця, яка називає себе Галактичним рейнджером, чиє справжнє ім'я невідоме. Озброєна довгим мечем, вона самотужки поневіряється всесвітом.Вона стримана і небагатослівна. Її меч швидкий і різкий, як блискавка, але вона завжди завдає ударів пукнами, не оголюючи лезо.</p>
+            <p id="role-text-axeron" class="hidden">Ахерон - персонаж, який накладає ослаблення на супротивників і накопичує заряд для використання надздібності й атаки супротивників. Надздібність Ахерон ігнорує типи вразливості супротивників, виснажує всю стійкість супротивників і знижує опір усім типам шкоди. Техніка Ахерон може миттєво знищувати деяких супротивників під час дослідження.</p>
+            <button onclick="toggleText('axeron', 'history')" class="button history-button">Історія персонажа</button>
+                <button onclick="toggleText('axeron', 'role')" class="button role-button">Роль у грі</button>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide3">
+      <img src="img/галахерфон.png" alt="Галлахер Background" class="background">
+      <img src="img/галахер.png" alt="Галлахер" class="character-image">
+      <div class="text-container">
+          <h1>ГАЛЛАХЕР</h1>
+          <p id="history-text-gallagher" class="hidden">Детектив із клану Гончих Пенаконії, за сумісництвом неохайний і недбайливий бармен. Одягнений недбало, напої робить абияк, але до гостей ставиться з пієтетом, хоча і з деякою недовірою. Схоже, у нього багате минуле, про яке він не любить розповідати.</p>
+          <p id="role-text-gallagher" class="hidden">Галлахер - персонаж підтримки, здатний завдавати шкоди. Його надздібність може атакувати всіх супротивників і накласти на них статус Мертвецки п'яний, а також посилити наступну базову атаку Галлахера. Коли союзник атакує противника зі статусом Мертвецки п'яний, HP союзника відновлюється.</p>
+          <button onclick="toggleText('gallagher', 'history')" class="button history-button">Історія персонажа</button>
+                <button onclick="toggleText('gallagher', 'role')" class="button role-button">Роль у грі</button>
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+  <!-- Navigation Buttons -->
+</div>
+<img src="img/кнопка1.png" class="nav-button prev" onclick="previousFrame()">
+  <img src="img/кнопка2.png" class="nav-button next" onclick="nextFrame()">
+</div>
+      <script src="app.js"></script>
 </body>
 </html>
