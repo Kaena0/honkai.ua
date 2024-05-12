@@ -3,6 +3,8 @@
 /* Загальні стилі */
 body,
 html {
+    background-color: #121111;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -60,29 +62,19 @@ header {
 }
 
 .download-button {
-    margin-right: 0;
-    /* Видалення правого відступу */
     display: flex;
-    width: 269px;
-    height: 66px;
-    padding: 15px 50px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    /* Внутрішні відступи для кнопки */
-    background: linear-gradient(90deg, #FDE5C4 0%, #FDF3E8 100%);
-    /* Градієнт для кнопки */
-    border: 1px solid #121212;
-    /* Рамка для кнопки */
-    border-radius: 0 0 0 30px;
-    /* Закруглення рамки */
-    color: black;
-    /* Колір тексту кнопки */
-    font-size: 18px;
-    /* Розмір шрифту кнопки */
-    cursor: pointer;
-    /* Вказівник курсору як кнопка */
+    width: 269px; /* Фіксована ширина кнопки */
+    height: 66px; /* Фіксована висота кнопки */
+    padding: 15px 50px; /* Внутрішній відступ кнопки */
+    margin: 0; /* Видалення всіх марджинів */
+    background: linear-gradient(90deg, #FDE5C4 0%, #FDF3E8 100%); /* Градієнт для фону */
+    border: 1px solid #121212; /* Тонка чорна рамка */
+    border-radius: 0 0 0 30px; /* Закруглення з одного кута */
+    color: black; /* Колір тексту */
+    font-size: 18px; /* Розмір шрифту */
+    cursor: pointer; /* Стиль курсору при наведенні */
 }
 
 .download-button:hover {
@@ -239,7 +231,7 @@ header {
     font-weight: 800;
     text-align: center;
     color: #263F42;
-    background: linear-gradient(180deg, #9E7741 0%, #FFE692 100%);
+    background: linear-gradient(180deg, #9E7741 0%, #ff0000 100%);
     border: 1px solid #121212;
     border-radius: 30px;
     /* Закруглені кути для кнопок */
@@ -248,7 +240,7 @@ header {
 }
 
 .button:hover {
-    background: linear-gradient(180deg, #FFE692 0%, #9E7741 100%);
+    background: linear-gradient(180deg, #a58e42 0%, #cda772 100%);
 }
 
 #history-text,
@@ -302,7 +294,7 @@ button:hover {
 .history-button {
     width: 201px;
     height: 84px;
-    background: linear-gradient(180deg, #9E7741 0%, #FFE692 100%);
+    background: linear-gradient(180deg, #9E7741 0%, #c3b37e 100%);
     color: #263F42;
     font-size: 20px;
     font-style: normal;
@@ -315,7 +307,7 @@ button:hover {
 .role-button {
     width: 188px;
     height: 57px;
-    background: linear-gradient(90deg, #edbe59 0%, #f3da6b 100%);
+    background: linear-gradient(90deg, #edbe59 0%, #998a46 100%);
     color: #263F42;
     font-size: 20px;
     font-style: normal;
@@ -526,3 +518,231 @@ button:hover {
 .nav-button.next {
     right: 1258px; /* Відступ з правого боку для правої кнопки */
 }
+
+
+/* Фон четвертого екрану */
+#fourth-screen {
+    width: 1495px;
+    height: 2636px;
+    background-image: url('img/wallpaper4.png');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Стилі для текстів */
+.text1, .text2, .text3, .text4, .text5, .text6 {
+    position: absolute;
+    font-family: 'Alegreya', serif;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.text3, .text5 {
+    font-family: 'Alegreya', serif;
+    color: #000;
+}
+
+.text1 {
+    height: 39px;
+    width: 271px;
+    top: 423px;
+    left: 177px;
+    right: 992px;
+    font-size: 23.5px;
+}
+
+.text2 {
+    width: 447px;
+    top: 539px;
+    left: 88px;
+    right: 905px;
+    flex-shrink: 0;
+    text-align: left
+}
+
+.text3 {
+    width: 552px;
+    top: 1075px;
+    left: 706px;
+    right: 182px;
+}
+
+.text4 {
+    width: 510px;
+    top: 1146px;
+    left: 850px;
+    right: 97px;
+    text-align: left
+}
+
+.text5 {
+    width: 552px;
+    top: 1750px;
+    left: 145px;
+    right: 743px;
+}
+
+.text6 {
+    width: 546px;
+    top: 1830px;
+    left: 100px;
+    right: 813px;
+    text-align: left
+}
+
+/* Застосування білого кольору тексту до усіх елементів, крім .text3 і .text5 */
+#fourth-screen .text1, #fourth-screen .text2, #fourth-screen .text4, #fourth-screen .text6 {
+    color: #FFF;
+}
+
+/* Застосування чорного кольору тексту до .text3 і .text5 */
+#fourth-screen .text3, #fourth-screen .text5 {
+    color: #000;
+}
+
+
+/* 5 екран */
+.slideshow {
+    width: 100%;
+    height: 881px; /* Висота контейнера */
+    overflow: hidden;
+    position: relative;
+    background: url('img/wallpaper5.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    animation: slide 60s linear infinite;
+    margin-top: 130px; /* Відстань зверху до фотографій */
+}
+
+.slides img {
+    width: 506px; /* Ширина зображень */
+    height: 420px; /* Висота зображень */
+    margin-right: 100px; /* Відстань між зображеннями */
+}
+
+.slides img:last-child {
+    margin-right: 0; /* Видалити відстань у останнього зображення */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-2224px); } /* Зміщення ліворуч на загальну ширину зображень з відступами */
+}
+
+
+
+/* 6 екран */
+
+.footer {
+    width: 1440px;
+    height: 815px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;  /* Встановлює контейнер як гнучкий бокс */
+    justify-content: center;  /* Центрує іконки в контейнері по горизонталі */
+    align-items: center;  /* Вирівнює іконки в контейнері по вертикалі */
+    gap: 100px;  /* Встановлює відстань між елементами у контейнері */
+}
+
+.footer-icon {
+    width: 70px;  /* Встановлення фіксованої ширини для іконок */
+    height: 90px;  /* Встановлення фіксованої висоти для іконок */
+    object-fit: contain;  /* Запобігає деформації зображення */
+}
+
+/* Запобігає проблемам з переносом іконок на новий рядок */
+.social-links {
+    flex-wrap: nowrap;  /* Вказує контейнеру не переносити іконки на новий рядок */
+    margin-bottom: 52px;  /* Відстань від соціальних іконок до наступного блоку */
+}
+
+
+.app-links {
+    display: flex;  /* Встановлюємо flexbox для вирівнювання елементів в один рядок */
+    justify-content: space-between;  /* Розташовуємо елементи з рівним відступом */
+    align-items: center;  /* Вирівнювання іконок по вертикалі */
+    gap: 90px;  /* Відстань між елементами */
+}
+
+.footer-icon2 {
+    width: 239px;  /* Фіксована ширина для кожної іконки */
+    height: 82px;  /* Фіксована висота для кожної іконки */
+    flex-shrink: 0;  /* Запобігає стисненню іконок */
+    object-fit: contain; /* Забезпечує, що зображення залишаться в межах заданих розмірів */
+}
+
+
+.footer-photo1 {
+    display: flex;
+    width: 448px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2.996px;
+    margin-bottom: 15px; /* Відступ знизу до першого блоку тексту */
+}
+
+.footer-photo2 {
+    display: flex;
+    width: 330px;
+    height: 60px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2.996px;
+    margin-top: 15px; /* Відступ зверху до другого фото, після другого блоку тексту */
+}
+
+.footer-text1 {
+    text-align: center;
+    color: #FFF;
+    font-family: 'Alegreya', sans-serif;
+    margin-top: 28px; /* Зменшуємо верхній відступ */
+    margin-bottom: 53px; /* Збільшуємо нижній відступ для підняття тексту вище */
+}
+
+.footer-text1 p {
+    margin: 8px 0; /* Зменшуємо відступ між параграфами */
+}
+
+.footer-text2 {
+    text-align: center;
+    color: #FFF;
+    font-family: 'Alegreya', sans-serif;
+    margin-top: 10px; /* Зменшуємо верхній відступ */
+}
+
+.footer-text2 p {
+    margin: 8px 0; /* Зменшуємо відступ між параграфами */
+}
+
+.footer img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+

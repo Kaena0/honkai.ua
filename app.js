@@ -40,3 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.toggleText = toggleText;
     showSlide(currentSlide); // Initialize the slideshow
 });
+
+document.querySelector('.download-button').addEventListener('click', function(e) {
+    e.preventDefault(); // Запобігає стандартній поведінці кнопки
+    document.getElementById('footer-section').scrollIntoView({ behavior: 'smooth' });
+  });

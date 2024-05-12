@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honkai</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -32,6 +32,7 @@
 
 
    <!-- Другий екран -->
+   <div id="concept">
    <div class="second-screen">
     <div id="text1" class="text">
       "Honkai: Star Rail" — це китайська мобільна рольова гра, розроблена компанією mihoyo, відомою також за інші популярні ігри, як "Honkai Impact 3rd" та "Genshin Impact". На даний момент працюємо під брендом HoVoverse. Гра поєднує в собі елементи рольових ігор, стратегій та пригодницької історії.
@@ -43,8 +44,11 @@
       Сюжет гри може бути складним і захоплюючим, де головні герої стикаються з загадковими загрозами, розкривають таємниці світу і борються з міфічними істотами. Гра часто пропонує інтригуючі квести, події та місії, які дозволяють гравцям дізнатися більше про світ "Honkai: Star Rail" і розвивати своїх персонажів.
     </div>
   </div>
- 
+</div>
+
+
     <!-- Third Screen Container -->
+    <div id="characters">
     <div class="slideshow-container">
         <!-- Slide 1 -->
       <div class="slide active" id="slide1">
@@ -95,6 +99,75 @@
 <img src="img/кнопка1.png" class="nav-button prev" onclick="previousFrame()">
   <img src="img/кнопка2.png" class="nav-button next" onclick="nextFrame()">
 </div>
+</div>
+
+
+<!-- Четвертий екран -->
+<div id="events">
+<div id="fourth-screen" class="background-container">
+  <div class="text1">Завдання легенд:Диявол в оксамиті</div>
+  <div class="text2">Ти був свідком істини, про яку говорив Авантюрин, істини, яка могла перевернути Пенаконію. А тепер цікаво, яке шоу буде далі...</div>
+  <div class="text3">Івент: Історія на дні стакану</div>
+  <div class="text4">Керівниця баром «Прокинься і співай» поїхала у справах і доручила вам попрацювати барменом. От тільки ви й не думали, що відвідувачі тут не зовсім звичайні...</div>
+  <div class="text5">Івент: Цунамі війни</div>
+  <div class="text6">Дослідник з відділу технічного обслуговування несподівано розробив бойову гру всередині міхура пам'яті та запрошує вас приєднатися...</div>
+</div>
+
+<!-- П’ятий екран -->
+<div id="news">
+<div class="slideshow">
+  <div class="slides">
+      <img src="img/news1.png" alt="News Image 1">
+      <img src="img/news2.png" alt="News Image 2">
+      <img src="img/news3.png" alt="News Image 3">
+      <img src="img/news4.png" alt="News Image 4">
+      <!-- Повторення зображень для плавного переходу -->
+      <img src="img/news1.png" alt="News Image 1">
+      <img src="img/news2.png" alt="News Image 2">
+      <img src="img/news3.png" alt="News Image 3">
+      <img src="img/news4.png" alt="News Image 4">
+  </div>
+</div>
+</div>
+
+<!--Шостий екран -->
+<!-- Підвал (Footer) -->
+<footer id="footer-section">
+<footer class="footer">
+  <div class="social-links">
+      <!-- Соціальні мережі -->
+      <a href="https://www.instagram.com/honkaistarrail/" target="_blank"><img src="img/Instagram.png" alt="Instagram"class="footer-icon"></a>
+      <a href="https://www.facebook.com/HonkaiStarRail/" target="_blank"><img src="img/Facebook.png" alt="Facebook"class="footer-icon"></a>
+      <a href="https://twitter.com/honkaistarrail" target="_blank"><img src="img/Twitter.png" alt="Twitter"class="footer-icon"></a>
+      <a href="https://discord.com/invite/honkaistarrail" target="_blank"><img src="img/Discord.png" alt="Discord"class="footer-icon"></a>
+      <a href="http://www.youtube.com/@HonkaiStarRail" target="_blank"><img src="img/YouTube.png" alt="YouTube"class="footer-icon"></a>
+      <a href="https://www.tiktok.com/@honkaistarrail_official?is_from_webapp=1&sender_device=pc" target="_blank"><img src="img/TikTok.png" alt="TikTok" class="footer-icon"></a>
+      <a href="https://www.hoyolab.com/accountCenter/postList?id=172534910" target="_blank"><img src="img/hoyolab.png" alt="Hoyolab"class="footer-icon"></a>
+  </div>
+  <div class="app-links">
+      <!-- Посилання на додатки -->
+      <a href="https://apps.apple.com/us/app/honkai-star-rail/id1599719154" target="_blank"><img src="img/апстор.png" alt="App Store"class="footer-icon2"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.HoYoverse.hkrpgoversea&referrer=adjust_reftag%3DcnWcnjqjWEfdx%26utm_source%3DOPT_HYV%2Bofficial%2Bsite%26utm_campaign%3DHYV%26utm_content%3DOPT_CB3_OFFICIAL_GP&pli=1" target="_blank"><img src="img/гугл.png" alt="Google Play"class="footer-icon2"></a>
+      <a href="https://www.playstation.com/uk-ua/games/honkai-star-rail/" target="_blank"><img src="img/пс5.png" alt="PS5"class="footer-icon2"></a>
+      <a href="https://store.epicgames.com/en-US/p/honkai-star-rail" target="_blank"><img src="img/епік.png" alt="Epic Games"class="footer-icon2"></a>
+  </div>
+  <div class="footer-photo1">
+      <!-- Додаткове фото -->
+      <img src="img/фото1.png" alt="Description">
+  </div>
+  <div class="footer-text1">
+      <p>Політика конфіденційності  Умови обслуговування  Служба підтримки </p>
+    </div>
+      <div class="footer-text2">
+      <p>"PlayStation Family Mark", "PlayStation" and "PS5 logo are registered trademarks or trademarks of Sony Interactive Entertainment Inc. Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
+  </div>
+  <div class="footer-photo2"> <img src="img/фото2.png" alt="Description">
+  </div>
+  <div class="copyright-text">
+      Copyright © COGNOSPHERE. All Rights Reserved
+  </div>
+</footer>
+</footer>
       <script src="app.js"></script>
 </body>
 </html>
