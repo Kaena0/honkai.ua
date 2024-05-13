@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Honkai</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
@@ -33,17 +33,21 @@
 
    <!-- Другий екран -->
    <div id="concept">
-   <div class="second-screen">
-    <div id="text1" class="text">
-      "Honkai: Star Rail" — це китайська мобільна рольова гра, розроблена компанією mihoyo, відомою також за інші популярні ігри, як "Honkai Impact 3rd" та "Genshin Impact". На даний момент працюємо під брендом HoVoverse. Гра поєднує в собі елементи рольових ігор, стратегій та пригодницької історії.
-    </div>
-    <div id="text2" class="text">
-      Основна ідея гри полягає в тому, що ви відвідуєте різні місця у грі, відкриваєте нові локації, досліджуєте світ, взаємодієте з різними персонажами, розблоковуєте нові навички та обладнання, і берете участь у різних битвах.
-    </div>
-    <div id="text3" class="text">
-      Сюжет гри може бути складним і захоплюючим, де головні герої стикаються з загадковими загрозами, розкривають таємниці світу і борються з міфічними істотами. Гра часто пропонує інтригуючі квести, події та місії, які дозволяють гравцям дізнатися більше про світ "Honkai: Star Rail" і розвивати своїх персонажів.
-    </div>
+    <div class="second-screen">
+      <img src="img/art1.png" alt="Опис фото 1" id="photo1" class="photo">
+      <img src="img/art2.png" alt="Опис фото 2" id="photo2" class="photo">
+      <img src="img/art3.png" alt="Опис фото 3" id="photo3" class="photo">
+      <div id="text1" class="text">
+        "Honkai: Star Rail" — це китайська мобільна рольова гра, розроблена компанією mihoyo, відомою також за інші популярні ігри, як "Honkai Impact 3rd" та "Genshin Impact". На даний момент працюємо під брендом HoVoverse. Гра поєднує в собі елементи рольових ігор, стратегій та пригодницької історії.
+      </div>
+      <div id="text2" class="text">
+        Основна ідея гри полягає в тому, що ви відвідуєте різні місця у грі, відкриваєте нові локації, досліджуєте світ, взаємодієте з різними персонажами, розблоковуєте нові навички та обладнання, і берете участь у різних битвах.
+      </div>
+      <div id="text3" class="text">
+        Сюжет гри може бути складним і захоплюючим, де головні герої стикаються з загадковими загрозами, розкривають таємниці світу і борються з міфічними істотами. Гра часто пропонує інтригуючі квести, події та місії, які дозволяють гравцям дізнатися більше про світ "Honkai: Star Rail" і розвивати своїх персонажів.
+      </div>
   </div>
+  
 </div>
 
 
@@ -61,10 +65,7 @@
                   <p id="role-text-slide1" class="hidden">Авантюрин - персонаж захисту, який може накладати щит Зміцнена ставка на всіх союзників і підвищувати їхній опір ефектам. Крім того, Авантюрин може різними способами накопичувати заряди і проводити бонус-атаки.</p>
                   <button onclick="toggleText('slide1', 'history')" class="button history-button">Історія персонажа</button>
                   <button onclick="toggleText('slide1', 'role')" class="button role-button">Роль у грі</button>
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-      </div>
+         
 
  <!-- Slide 2 -->
       <div class="slide" id="slide2">
@@ -156,8 +157,10 @@
       <img src="img/фото1.png" alt="Description">
   </div>
   <div class="footer-text1">
-      <p>Політика конфіденційності  Умови обслуговування  Служба підтримки </p>
-    </div>
+    <span>Політика конфіденційності</span>
+    <span>Умови обслуговування</span>
+    <span>Служба підтримки</span>
+</div>
       <div class="footer-text2">
       <p>"PlayStation Family Mark", "PlayStation" and "PS5 logo are registered trademarks or trademarks of Sony Interactive Entertainment Inc. Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
   </div>

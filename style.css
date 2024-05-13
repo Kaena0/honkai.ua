@@ -1,5 +1,3 @@
-
-
 /* Загальні стилі */
 body,
 html {
@@ -65,16 +63,26 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 269px; /* Фіксована ширина кнопки */
-    height: 66px; /* Фіксована висота кнопки */
-    padding: 15px 50px; /* Внутрішній відступ кнопки */
-    margin: 0; /* Видалення всіх марджинів */
-    background: linear-gradient(90deg, #FDE5C4 0%, #FDF3E8 100%); /* Градієнт для фону */
-    border: 1px solid #121212; /* Тонка чорна рамка */
-    border-radius: 0 0 0 30px; /* Закруглення з одного кута */
-    color: black; /* Колір тексту */
-    font-size: 18px; /* Розмір шрифту */
-    cursor: pointer; /* Стиль курсору при наведенні */
+    width: 269px;
+    /* Фіксована ширина кнопки */
+    height: 66px;
+    /* Фіксована висота кнопки */
+    padding: 15px 50px;
+    /* Внутрішній відступ кнопки */
+    margin: 0;
+    /* Видалення всіх марджинів */
+    background: linear-gradient(90deg, #FDE5C4 0%, #FDF3E8 100%);
+    /* Градієнт для фону */
+    border: 1px solid #121212;
+    /* Тонка чорна рамка */
+    border-radius: 0 0 0 30px;
+    /* Закруглення з одного кута */
+    color: black;
+    /* Колір тексту */
+    font-size: 18px;
+    /* Розмір шрифту */
+    cursor: pointer;
+    /* Стиль курсору при наведенні */
 }
 
 .download-button:hover {
@@ -114,22 +122,25 @@ header {
 }
 
 /* Екран 2 */
-
 .second-screen {
     width: 1497px;
     height: 1956px;
-    background-image: url('img/wallpaper2.png');
+    background-image: url('img/Frame.png');
     background-size: cover;
     position: relative;
+    z-index: 2;
 }
-
 .text {
     position: absolute;
+    color: #FFF;
+    /* Уточнення кольору тексту */
     font-size: 28px;
     line-height: 140%;
+    font-family: Alegreya, sans-serif;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.2px;
+    width: auto;
 }
 
 #text1 {
@@ -140,7 +151,7 @@ header {
 }
 
 #text2 {
-    top: 945px;
+    top: 886px;
     left: 774px;
     right: 84px;
     width: 582px;
@@ -152,6 +163,38 @@ header {
     right: 717px;
     width: 652px;
 }
+
+.photo {
+    position: absolute;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0.9; /* Зменшено непрозорість зображень */
+    z-index: 5px;
+}
+
+#photo1 {
+    top: 395px;
+    left: 713px;
+    width: 654px;
+    height: 364px;
+}
+
+#photo2 {
+    top: 886px;
+    right: 704px;
+    left: 82px;
+    width: 654px;
+    height: 364px;
+}
+
+#photo3 {
+    top: 1430px;
+    right: 73px;
+    left: 736px;
+    width: 612px;
+    height: 380px;
+}
+
 
 /* Екран 3 */
 .slideshow-container {
@@ -231,7 +274,7 @@ header {
     font-weight: 800;
     text-align: center;
     color: #263F42;
-    background: linear-gradient(180deg, #9E7741 0%, #ff0000 100%);
+    background: linear-gradient(180deg, #9E7741 0%, #FFE692 100%);
     border: 1px solid #121212;
     border-radius: 30px;
     /* Закруглені кути для кнопок */
@@ -329,6 +372,7 @@ button:hover {
     background-size: cover;
     position: relative;
 }
+
 .background {
     position: absolute;
     top: 0;
@@ -339,6 +383,7 @@ button:hover {
     z-index: 1;
     /* Lower z-index because it is the background */
 }
+
 #slide2 .character-image {
     position: absolute;
     top: 50%;
@@ -374,7 +419,8 @@ button:hover {
     padding: 15px 50px;
     font-size: 20px;
     font-weight: 800;
-    color: #C8DDE0;;
+    color: #C8DDE0;
+    ;
     background: linear-gradient(180deg, #e881eb 0%, #983a9b 100%);
     border: 1px solid #121212;
     border-radius: 30px;
@@ -391,7 +437,8 @@ button:hover {
     display: none;
 }
 
-#slide2 .prev, #slide2 .next {
+#slide2 .prev,
+#slide2 .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -493,9 +540,9 @@ button:hover {
     background: linear-gradient(180deg, #d66c79 0%, #e95050 100%);
 }
 
- /* стилі з кнопок */
+/* стилі з кнопок */
 
- .specific-slideshow {
+.specific-slideshow {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -504,19 +551,24 @@ button:hover {
 
 .nav-button {
     position: absolute;
-    top: 625px; /* Задаємо вертикальне розташування для кнопок */
+    top: 625px;
+    /* Задаємо вертикальне розташування для кнопок */
     z-index: 10;
     cursor: pointer;
-    width: 26px; /* Ширина кнопки */
-    height: 35px; /* Висота кнопки */
+    width: 26px;
+    /* Ширина кнопки */
+    height: 35px;
+    /* Висота кнопки */
 }
 
 .nav-button.prev {
-    left: 103px; /* Відступ з лівого боку для лівої кнопки */
+    left: 103px;
+    /* Відступ з лівого боку для лівої кнопки */
 }
 
 .nav-button.next {
-    right: 1258px; /* Відступ з правого боку для правої кнопки */
+    right: 1258px;
+    /* Відступ з правого боку для правої кнопки */
 }
 
 
@@ -534,7 +586,12 @@ button:hover {
 }
 
 /* Стилі для текстів */
-.text1, .text2, .text3, .text4, .text5, .text6 {
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6 {
     position: absolute;
     font-family: 'Alegreya', serif;
     color: #FFF;
@@ -546,7 +603,8 @@ button:hover {
     padding: 10px;
 }
 
-.text3, .text5 {
+.text3,
+.text5 {
     font-family: 'Alegreya', serif;
     color: #000;
 }
@@ -600,12 +658,16 @@ button:hover {
 }
 
 /* Застосування білого кольору тексту до усіх елементів, крім .text3 і .text5 */
-#fourth-screen .text1, #fourth-screen .text2, #fourth-screen .text4, #fourth-screen .text6 {
+#fourth-screen .text1,
+#fourth-screen .text2,
+#fourth-screen .text4,
+#fourth-screen .text6 {
     color: #FFF;
 }
 
 /* Застосування чорного кольору тексту до .text3 і .text5 */
-#fourth-screen .text3, #fourth-screen .text5 {
+#fourth-screen .text3,
+#fourth-screen .text5 {
     color: #000;
 }
 
@@ -613,7 +675,8 @@ button:hover {
 /* 5 екран */
 .slideshow {
     width: 100%;
-    height: 881px; /* Висота контейнера */
+    height: 881px;
+    /* Висота контейнера */
     overflow: hidden;
     position: relative;
     background: url('img/wallpaper5.png') no-repeat center center;
@@ -626,22 +689,34 @@ button:hover {
     display: flex;
     align-items: center;
     animation: slide 60s linear infinite;
-    margin-top: 130px; /* Відстань зверху до фотографій */
+    margin-top: 130px;
+    /* Відстань зверху до фотографій */
 }
 
 .slides img {
-    width: 506px; /* Ширина зображень */
-    height: 420px; /* Висота зображень */
-    margin-right: 100px; /* Відстань між зображеннями */
+    width: 506px;
+    /* Ширина зображень */
+    height: 420px;
+    /* Висота зображень */
+    margin-right: 100px;
+    /* Відстань між зображеннями */
 }
 
 .slides img:last-child {
-    margin-right: 0; /* Видалити відстань у останнього зображення */
+    margin-right: 0;
+    /* Видалити відстань у останнього зображення */
 }
 
 @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-2224px); } /* Зміщення ліворуч на загальну ширину зображень з відступами */
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-2224px);
+    }
+
+    /* Зміщення ліворуч на загальну ширину зображень з відступами */
 }
 
 
@@ -659,39 +734,62 @@ button:hover {
 }
 
 .social-links {
-    display: flex;  /* Встановлює контейнер як гнучкий бокс */
-    justify-content: center;  /* Центрує іконки в контейнері по горизонталі */
-    align-items: center;  /* Вирівнює іконки в контейнері по вертикалі */
-    gap: 100px;  /* Встановлює відстань між елементами у контейнері */
+    display: flex;
+    /* Встановлює контейнер як гнучкий бокс */
+    justify-content: center;
+    /* Центрує іконки в контейнері по горизонталі */
+    align-items: center;
+    /* Вирівнює іконки в контейнері по вертикалі */
+    gap: 100px;
+    /* Встановлює відстань між елементами у контейнері */
 }
 
 .footer-icon {
-    width: 70px;  /* Встановлення фіксованої ширини для іконок */
-    height: 90px;  /* Встановлення фіксованої висоти для іконок */
-    object-fit: contain;  /* Запобігає деформації зображення */
+    width: 70px;
+    /* Встановлення фіксованої ширини для іконок */
+    height: 90px;
+    /* Встановлення фіксованої висоти для іконок */
+    object-fit: contain;
+    /* Запобігає деформації зображення */
 }
 
 /* Запобігає проблемам з переносом іконок на новий рядок */
 .social-links {
-    flex-wrap: nowrap;  /* Вказує контейнеру не переносити іконки на новий рядок */
-    margin-bottom: 52px;  /* Відстань від соціальних іконок до наступного блоку */
+    flex-wrap: nowrap;
+    /* Вказує контейнеру не переносити іконки на новий рядок */
+    margin-bottom: 52px;
+    /* Відстань від соціальних іконок до наступного блоку */
 }
 
 
 .app-links {
-    display: flex;  /* Встановлюємо flexbox для вирівнювання елементів в один рядок */
-    justify-content: space-between;  /* Розташовуємо елементи з рівним відступом */
-    align-items: center;  /* Вирівнювання іконок по вертикалі */
-    gap: 90px;  /* Відстань між елементами */
+    display: flex;
+    /* Встановлюємо flexbox для вирівнювання елементів в один рядок */
+    justify-content: space-between;
+    /* Розташовуємо елементи з рівним відступом */
+    align-items: center;
+    /* Вирівнювання іконок по вертикалі */
+    gap: 90px;
+    /* Відстань між елементами */
 }
 
 .footer-icon2 {
-    width: 239px;  /* Фіксована ширина для кожної іконки */
-    height: 82px;  /* Фіксована висота для кожної іконки */
-    flex-shrink: 0;  /* Запобігає стисненню іконок */
-    object-fit: contain; /* Забезпечує, що зображення залишаться в межах заданих розмірів */
+    width: 239px;
+    /* Фіксована ширина для кожної іконки */
+    height: 82px;
+    /* Фіксована висота для кожної іконки */
+    flex-shrink: 0;
+    /* Запобігає стисненню іконок */
+    object-fit: contain;
+    /* Забезпечує, що зображення залишаться в межах заданих розмірів */
 }
 
+.app-links {
+    flex-wrap: nowrap;
+    /* Вказує контейнеру не переносити іконки на новий рядок */
+    margin-bottom: 72px;
+    /* Відстань від соціальних іконок до наступного блоку */
+}
 
 .footer-photo1 {
     display: flex;
@@ -699,7 +797,8 @@ button:hover {
     justify-content: center;
     align-items: flex-end;
     gap: 2.996px;
-    margin-bottom: 15px; /* Відступ знизу до першого блоку тексту */
+    margin-bottom: 15px;
+    /* Відступ знизу до першого блоку тексту */
 }
 
 .footer-photo2 {
@@ -709,30 +808,45 @@ button:hover {
     justify-content: center;
     align-items: flex-end;
     gap: 2.996px;
-    margin-top: 15px; /* Відступ зверху до другого фото, після другого блоку тексту */
+    margin-top: 15px;
+    /* Відступ зверху до другого фото, після другого блоку тексту */
 }
 
 .footer-text1 {
     text-align: center;
     color: #FFF;
     font-family: 'Alegreya', sans-serif;
-    margin-top: 28px; /* Зменшуємо верхній відступ */
-    margin-bottom: 53px; /* Збільшуємо нижній відступ для підняття тексту вище */
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
+.footer-text1 span {
+    margin-right: 40px;
+    /* Додаємо відступ між елементами */
+}
+
+.footer-text1 span:last-child {
+    margin-right: 0;
+    /* Видаляємо відступ у останнього елемента */
+}
+
+
 .footer-text1 p {
-    margin: 8px 0; /* Зменшуємо відступ між параграфами */
+    margin: 8px 0;
+    /* Зменшуємо відступ між параграфами */
 }
 
 .footer-text2 {
     text-align: center;
     color: #FFF;
     font-family: 'Alegreya', sans-serif;
-    margin-top: 10px; /* Зменшуємо верхній відступ */
+    margin-top: 10px;
+    /* Зменшуємо верхній відступ */
 }
 
 .footer-text2 p {
-    margin: 8px 0; /* Зменшуємо відступ між параграфами */
+    margin: 8px 0;
+    /* Зменшуємо відступ між параграфами */
 }
 
 .footer img {
@@ -744,5 +858,124 @@ button:hover {
         flex-direction: column;
     }
 }
+/* Основні стилі для мобільних пристроїв */
+@media (max-width: 768px){
+    
+    .logo {
+        margin-bottom: 10px;
+        /* Додатковий відступ між логотипом і навігацією */
+        margin-left: -677px;
+        margin-top: -11px;
 
+    }
 
+element.style {
+    position: absolute;
+    top: 270px;
+    left: 7px;
+    width: 527px;
+    height: 76px;
+}
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 269px;
+    height: 66px;
+    padding: 15px 50px;
+    margin: 0;
+    background: linear-gradient(90deg, #FDE5C4 0%, #FDF3E8 100%);
+    border: 1px solid #121212;
+    border-radius: 0 0 36px 36px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+.download-button {
+    width: 220px;
+    height: 57px;
+    font-size: 16px;
+    padding: 23px 59px;
+    margin-top: -237px;
+}
+
+    .navigation {
+        flex-direction: column;
+        gap: 20px;
+        /* Збільшений відступ між посиланнями */
+    }
+
+    .navigation a {
+        font-size: 16px;
+        /* Менший розмір шрифту для кращого відображення */
+    }
+
+    .download-button {
+        width: 220px;
+        height: 50px;
+        font-size: 16px;
+        padding: 10px 25px;
+        margin-top: 20px;
+        /* Відступ від навігації */
+    }
+
+    .background-image, .honkai-text {
+        width: 200%;
+        height: auto;
+        top: initial;
+        left: -574px;
+        position: relative;
+    }
+    
+    element.style {
+        position: absolute;
+        top: 509px;
+        left: 19px;
+        width: 616px;
+        height: 99px;
+    }
+
+    #photo1 {
+        top: 377px;
+        left: 460px;
+        width: 620px;
+        height: 333px;
+    }
+    .photo1 {
+        position: absolute;
+        border-radius: 14px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        opacity: 0.9;
+        z-index: 5px;
+    }
+
+    #photo2 {
+        top: 921px;
+        right: 704px;
+        left: 464px;
+        width: 615px;
+        height: 346px;
+    }
+    .photo2 {
+        position: absolute;
+        border-radius: 14px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        opacity: 0.9;
+        z-index: 5px;
+    }
+
+    #photo3 {
+        top: 1430px;
+        right: 73px;
+        left: 461px;
+        width: 610px;
+        height: 380px;
+    }
+    .photo3 {
+        position: absolute;
+        border-radius: 14px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        opacity: 0.9;
+        z-index: 5px;
+    }
+}
