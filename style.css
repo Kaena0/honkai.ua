@@ -128,7 +128,7 @@ header {
     background-image: url('img/Frame.png');
     background-size: cover;
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 .text {
     position: absolute;
@@ -859,7 +859,7 @@ button:hover {
     }
 }
 /* Основні стилі для мобільних пристроїв */
-@media (max-width: 768px){
+@media (max-width: 430px){
     
     .logo {
         margin-bottom: 10px;
