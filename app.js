@@ -45,3 +45,13 @@ document.querySelector('.download-button').addEventListener('click', function(e)
     e.preventDefault(); // Запобігає стандартній поведінці кнопки
     document.getElementById('footer-section').scrollIntoView({ behavior: 'smooth' });
   });
+
+  menuIcon.addEventListener('click', function() {
+    // Переключає відображення мобільного меню
+    if (mobileNav.style.display === 'block') {
+      mobileNav.style.display = 'none';
+    } else {
+      mobileNav.style.display = 'block';
+    }
+
+});
